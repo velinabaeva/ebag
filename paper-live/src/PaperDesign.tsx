@@ -925,7 +925,7 @@ export default function PaperDesign() {
 
   return (
     <>
-<div style={{ backgroundColor: '#FFFFFF', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', fontSize: '12px', fontSynthesis: 'none', gap: '24px', height: '1177px', lineHeight: '16px', MozOsxFontSmoothing: 'grayscale', paddingBlock: '16px', WebkitFontSmoothing: 'antialiased', width: '1440px' }}>
+<div style={{ backgroundColor: '#FFFFFF', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', fontSize: '12px', fontSynthesis: 'none', gap: '24px', height: '1177px', lineHeight: '16px', MozOsxFontSmoothing: 'grayscale', paddingTop: 0, paddingBottom: '16px', WebkitFontSmoothing: 'antialiased', width: '1440px' }}>
       <div style={{ alignItems: 'start', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: '8px', paddingBlock: 0, paddingInline: 0, width: 'fit-content' }}>
         <div style={{ alignItems: 'flex-start', backgroundColor: '#138484', boxSizing: 'border-box', display: 'flex', flexShrink: '0', gap: '24px', height: '80px', marginLeft: 'auto', marginRight: 'auto', maxWidth: '1664px', paddingBlock: '20px', paddingInline: '28px', width: '1440px' }}>
           <div style={{ boxSizing: 'border-box', flexShrink: '0', WebkitTextDecorationsInEffect: 'underline' }}>
