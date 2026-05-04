@@ -1,0 +1,423 @@
+/* Hover / active feedback for Paper preview (eBag-style affordances). Scoped under .paper-root. */
+
+.paper-root button {
+  cursor: pointer;
+}
+
+.paper-root button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.paper-root a[href] {
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.paper-root a[href]:hover {
+  color: #0f6262;
+  opacity: 0.92;
+}
+
+.paper-root a[href]:active {
+  opacity: 0.85;
+}
+
+.paper-root .paper-logo-link {
+  border-radius: 8px;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.paper-root .paper-logo-link:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.paper-root .paper-logo-link:active {
+  transform: scale(0.98);
+}
+
+/* Inset circle tools (toolbar + similar) */
+.paper-root .paper-tool-inset {
+  transition:
+    background-color 0.12s ease,
+    box-shadow 0.12s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-tool-inset:hover {
+  background-color: #f7f7f7 !important;
+  box-shadow: #353535 0 0 0 1px inset, 0 1px 2px rgba(2, 2, 2, 0.06);
+}
+
+.paper-root .paper-tool-inset:active {
+  background-color: #efefef !important;
+  transform: scale(0.96);
+}
+
+/* Ghost / icon (modal close) */
+.paper-root .paper-icon-btn {
+  transition:
+    background-color 0.12s ease,
+    color 0.12s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-icon-btn:hover {
+  background-color: rgba(2, 2, 2, 0.06) !important;
+}
+
+.paper-root .paper-icon-btn:active {
+  background-color: rgba(2, 2, 2, 0.1) !important;
+  transform: scale(0.94);
+}
+
+/* Back chevron (list page) */
+.paper-root .paper-back-btn {
+  transition:
+    background-color 0.12s ease,
+    box-shadow 0.12s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-back-btn:hover {
+  background-color: #fafafa !important;
+  box-shadow: #b3b3b3 0 0 0 1px inset;
+}
+
+.paper-root .paper-back-btn:active {
+  background-color: #f0f0f0 !important;
+  transform: scale(0.96);
+}
+
+/* Wide inset pill (empty state CTA) */
+.paper-root .paper-btn-pill-inset {
+  transition:
+    background-color 0.12s ease,
+    box-shadow 0.12s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-btn-pill-inset:hover {
+  background-color: #fafafa !important;
+  box-shadow: #2a2a2a 0 0 0 1px inset;
+}
+
+.paper-root .paper-btn-pill-inset:active {
+  background-color: #f0f0f0 !important;
+  transform: scale(0.99);
+}
+
+/* Modal suggestion chips */
+.paper-root .paper-chip-inset {
+  transition:
+    background-color 0.12s ease,
+    box-shadow 0.12s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-chip-inset:hover {
+  background-color: #f7fcfc !important;
+  box-shadow: #138484 0 0 0 1px inset;
+}
+
+.paper-root .paper-chip-inset:active {
+  transform: scale(0.97);
+}
+
+/* Primary teal */
+.paper-root .paper-btn-primary-teal {
+  transition:
+    background-color 0.12s ease,
+    transform 0.1s ease,
+    box-shadow 0.12s ease;
+}
+
+.paper-root .paper-btn-primary-teal:hover:not(:disabled) {
+  background-color: #0f6262 !important;
+  box-shadow: none;
+}
+
+.paper-root .paper-btn-primary-teal:active:not(:disabled) {
+  background-color: #0a4f4f !important;
+  transform: scale(0.98);
+}
+
+/* Modal textarea focus ring */
+.paper-root .paper-modal-textarea:focus {
+  border-color: #138484 !important;
+  box-shadow: 0 0 0 2px rgba(19, 132, 132, 0.2);
+}
+
+.paper-root .paper-modal-textarea:focus-visible {
+  outline: none;
+}
+
+/* Account sidebar rows (eBag lists–style list affordance) */
+.paper-root .paper-sidebar-row {
+  cursor: pointer;
+  transition:
+    background-color 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.paper-root .paper-sidebar-row:not(.paper-sidebar-row--active):hover {
+  background-color: rgba(2, 2, 2, 0.04);
+}
+
+.paper-root .paper-sidebar-row:not(.paper-sidebar-row--active):active {
+  background-color: rgba(2, 2, 2, 0.07);
+}
+
+.paper-root .paper-sidebar-row--active:hover {
+  background-color: #d8efef !important;
+}
+
+.paper-root .paper-sidebar-row--active:active {
+  background-color: #cceaea !important;
+}
+
+/* Secondary nav chips under main header (hover: warm cream, eBag-style) */
+.paper-root .paper-subnav-pill {
+  cursor: pointer;
+  transition:
+    background-color 0.14s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-subnav-pill:hover {
+  background-color: #fdf9f3 !important;
+  box-shadow: none;
+}
+
+.paper-root .paper-subnav-pill:active {
+  background-color: #f5efe6 !important;
+  box-shadow: none;
+  transform: scale(0.99);
+}
+
+.paper-root .paper-subnav-pill--shopping-list {
+  transition:
+    background-color 0.14s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-subnav-pill--shopping-list:hover {
+  background-color: #fdf9f3 !important;
+}
+
+.paper-root .paper-subnav-pill--shopping-list:active {
+  background-color: #f5efe6 !important;
+  transform: scale(0.99);
+}
+
+/* Top bar interactive regions on teal background */
+.paper-root .paper-header-hit {
+  cursor: pointer;
+  transition:
+    filter 0.12s ease,
+    transform 0.1s ease,
+    box-shadow 0.12s ease;
+}
+
+.paper-root .paper-header-hit--dark:hover {
+  filter: brightness(1.08);
+}
+
+.paper-root .paper-header-hit--dark:active {
+  filter: brightness(0.94);
+  transform: scale(0.99);
+}
+
+.paper-root .paper-header-hit--light:hover {
+  box-shadow: inset 0 0 0 1px rgba(2, 2, 2, 0.08);
+  filter: brightness(0.99);
+}
+
+.paper-root .paper-header-hit--light:active {
+  filter: brightness(0.96);
+  transform: scale(0.998);
+}
+
+.paper-root .paper-header-hit--yellow:hover {
+  filter: brightness(1.05);
+}
+
+.paper-root .paper-header-hit--yellow:active {
+  filter: brightness(0.92);
+  transform: scale(0.96);
+}
+
+.paper-root .paper-header-hit--teal-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.paper-root .paper-header-hit--teal-ghost:active {
+  background-color: rgba(255, 255, 255, 0.18) !important;
+  transform: scale(0.97);
+}
+
+.paper-root .paper-header-hit--light.paper-modal-search-hit {
+  box-shadow: inset 0 0 0 1px #cccccc;
+  cursor: default;
+}
+
+.paper-root .paper-header-hit--light.paper-modal-search-hit:hover {
+  box-shadow: inset 0 0 0 1px #b3b3b3;
+  filter: brightness(0.99);
+}
+
+.paper-root .paper-product-card {
+  transition:
+    box-shadow 0.12s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-product-card:hover {
+  box-shadow: 0 8px 24px rgba(2, 2, 2, 0.08);
+}
+
+.paper-root .paper-modal-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.paper-root .paper-modal-search-clear {
+  transition:
+    background-color 0.12s ease,
+    box-shadow 0.12s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-modal-search-clear:hover {
+  background-color: #f7f7f7 !important;
+  box-shadow: inset 0 0 0 1px #353535, 0 1px 2px rgba(2, 2, 2, 0.06);
+}
+
+.paper-root .paper-modal-search-clear:active {
+  background-color: #efefef !important;
+  transform: scale(0.96);
+}
+
+/* Hover tooltips (toolbar invite + participants) */
+.paper-root .paper-tip {
+  position: relative;
+  z-index: 1;
+}
+
+.paper-root .paper-tip::after {
+  background-color: #020202;
+  border-radius: 8px;
+  bottom: calc(100% + 8px);
+  box-shadow: 0 4px 14px rgba(2, 2, 2, 0.18);
+  box-sizing: border-box;
+  color: #ffffff;
+  content: attr(data-paper-tip);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  left: 50%;
+  line-height: 1.3;
+  max-width: min(280px, 70vw);
+  opacity: 0;
+  padding-block: 6px;
+  padding-inline: 10px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  transition:
+    opacity 0.12s ease,
+    visibility 0.12s ease;
+  visibility: hidden;
+  white-space: nowrap;
+  z-index: 200;
+}
+
+.paper-root .paper-tip:hover::after,
+.paper-root .paper-tip:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Muted pill (modal secondary) */
+.paper-root .paper-btn-pill-muted {
+  transition:
+    background-color 0.12s ease,
+    transform 0.1s ease,
+    box-shadow 0.12s ease;
+}
+
+.paper-root .paper-btn-pill-muted:hover {
+  background-color: #ebebeb !important;
+}
+
+.paper-root .paper-btn-pill-muted:active {
+  background-color: #e0e0e0 !important;
+  transform: scale(0.99);
+}
+
+.paper-root .paper-btn-primary-teal:disabled:hover,
+.paper-root .paper-btn-primary-teal:disabled:active {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Toolbar «Купи всичко» — same primary treatment */
+.paper-root .paper-toolbar-cart-btn {
+  min-width: 0;
+}
+
+/* Peer avatar (opens members modal) */
+.paper-root .paper-avatar-mm-btn {
+  transition:
+    filter 0.12s ease,
+    transform 0.1s ease,
+    box-shadow 0.12s ease;
+}
+
+.paper-root .paper-avatar-mm-btn:hover {
+  box-shadow: 0 0 0 2px rgba(19, 132, 132, 0.35);
+  filter: brightness(1.03);
+}
+
+.paper-root .paper-avatar-mm-btn:active {
+  filter: brightness(0.97);
+  transform: scale(0.97);
+}
+
+/* More-menu dropdown rows */
+.paper-root .paper-dropdown-item {
+  transition: background-color 0.12s ease;
+}
+
+.paper-root .paper-dropdown-item:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.paper-root .paper-dropdown-item:active {
+  background-color: #e8e8e8 !important;
+}
+
+/* Destructive confirm */
+.paper-root .paper-btn-danger {
+  transition:
+    background-color 0.12s ease,
+    transform 0.1s ease;
+}
+
+.paper-root .paper-btn-danger:hover {
+  background-color: #a32222 !important;
+}
+
+.paper-root .paper-btn-danger:active {
+  background-color: #8b1d1d !important;
+  transform: scale(0.98);
+}
+
+.paper-root .paper-link-remove:hover {
+  color: #8b1d1d !important;
+}

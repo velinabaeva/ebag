@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Mirrors https://www.ebag.bg desktop/main.css design tokens (subset) */
+@layer base {
+  :root {
+    --font-primary: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-secondary: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+    --color-black: #020202;
+    --color-white: #fff;
+    --color-teal: #138484;
+    --color-teal-60: #0f6262;
+    --color-teal-20: #e4f6f6;
+    --color-teal-10: #f2fafa;
+    --color-yellow-40: #f5bf47;
+    --color-yellow: #daa328;
+    --color-gray: #9a9a9a;
+    --color-gray-60: #676767;
+    --color-gray-40: #ccc;
+    --color-gray-20: #e6e6e6;
+    --color-gray-10: #f5f5f5;
+    --color-gray-80: #353535;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-white);
+    color: var(--color-black);
+    font-family: var(--font-primary);
+  }
+
+  #root {
+    min-height: 100vh;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+@utility content-stretch {
+  align-content: stretch;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
