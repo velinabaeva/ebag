@@ -8,6 +8,7 @@
     "dev": "vite",
     "dev:https": "VITE_DEV_HTTPS=1 vite",
     "build": "tsc -b && vite build",
+    "build:pages": "VITE_BASE_PATH=/ebag/ npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
