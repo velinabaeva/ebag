@@ -16,6 +16,8 @@ function resolveBase(): string {
     const withSlash = explicit.startsWith('/') ? explicit : `/${explicit}`
     return withSlash.endsWith('/') ? withSlash : `${withSlash}/`
   }
+  // Vercel / Netlify etc. serve this app at the deployment root — never use /repo/ base here.
+  if (process.env.VERCEL === '1') return '/'
   const ghRepo = process.env.GITHUB_REPOSITORY
   if (process.env.GITHUB_ACTIONS === 'true' && ghRepo?.includes('/')) {
     const repoName = ghRepo.split('/')[1]
