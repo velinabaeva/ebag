@@ -16,3 +16,16 @@ body,
   overflow-x: auto;
   background: #fff;
 }
+
+.paper-legal-footer {
+  box-sizing: border-box;
+  max-width: 1664px;
+  margin-inline: auto;
+  padding: 16px 28px 28px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #9a9a9a;
+  text-align: center;
+}

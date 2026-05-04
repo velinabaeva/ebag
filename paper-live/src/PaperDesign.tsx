@@ -1012,7 +1012,7 @@ export default function PaperDesign() {
                 width: '40px',
               }}
             >
-              <ListTodo size={18} color="#FFFFFF" strokeWidth={2} aria-hidden style={{ flexShrink: 0 }} />
+              <ListChecks size={18} color="#FFFFFF" strokeWidth={2} aria-hidden style={{ flexShrink: 0 }} />
             </button>
           </div>
           <div className="paper-header-hit paper-header-hit--teal-ghost" style={{ alignItems: 'center', borderRadius: '2048px', boxSizing: 'border-box', display: 'flex', flexShrink: '0', gap: '8px', height: '40px', justifyContent: 'center', paddingInline: '8px', position: 'relative', width: '40px' }}>
@@ -1187,7 +1187,7 @@ export default function PaperDesign() {
                         width: '24px',
                       }}
                     >
-                      <ListTodo size={22} color="#DAA328" strokeWidth={2} aria-hidden style={{ flexShrink: 0 }} />
+                      <ListChecks size={20} color="#DAA328" strokeWidth={2} aria-hidden style={{ flexShrink: '0', verticalAlign: '-2px' }} />
                     </div>
                     <div
                       style={{
